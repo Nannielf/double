@@ -1,5 +1,8 @@
-/* Руслан Афанасьев */
+  /* Руслан Афанасьев */
 
+.yahts-section {
+  padding: 40px 0;
+}
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -25,6 +28,14 @@ body {
   margin: 0 auto;
 }
 
+.yahtsblock-tittle {
+  color: var(--white, #f6f5ef);
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 39.6px */
+  letter-spacing: -1.62px;
 .yahts-section {
   padding-bottom: 40px;
   padding-top: 40px;
@@ -81,6 +92,12 @@ body {
 
   margin-bottom: 94px;
 }
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 375px;
+  min-width: 320px;
+}
 .yahtsblock-container {
   display: flex;
   flex-direction: column;
@@ -90,6 +107,7 @@ body {
   margin: 0 auto;
 }
 .yahtsblock-tittle {
+  max-width: 308px;
   max-width: 310px;
   color: var(--white, #f6f5ef);
   font-family: DM Sans;
