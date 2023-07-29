@@ -1,5 +1,96 @@
 /* Olena Demydova */
 
-.about{
-    background-color: rgb(204, 240, 157);
+.about {
+}
+.about-block {
+}
+.about-text-block {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-text-block {
+      margin-bottom: 64px;
+  } 
+}
+
+.about-big-text {
+    color: var(--white, #F6F5EF);
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1.08px;
+
+    margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+    .about-big-text {
+    margin-bottom: 32px;
+    width: 514px;
+    font-size: 32px;
+    letter-spacing: -1.44px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+    .about-big-text {
+    margin: 0;
+  }
+}
+
+.about-color-text {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1.08px;
+    background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media only screen and (min-width: 768px) {
+    .about-color-text {
+    font-size: 32px;
+    letter-spacing: -1.44px;
+  }
+}
+
+.about-small-text {
+    color: var(--white, #F6F5EF);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.28px;
+    
+    display: flex;
+    margin: 0 auto;
+    gap:14px;
+}
+@media only screen and (min-width: 768px) {
+    .about-small-text {
+        gap:32px;
+        justify-content: flex-end;
+        width: 400px;
+
+        font-size: 16px;
+        letter-spacing: -0.32px;
+  }
+}
+
+.about-image-block {
+}
+.about-image-list {
+}
+.about-image-item {
+}
+.about-image1 {
+}
+.about-image2 {
+}
+.about-image3 {
 }

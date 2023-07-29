@@ -13,15 +13,19 @@
 @import url('./rent-block.css');
 @import url('./reviews-block.css');
 @import url('./footer.css');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,500&display=swap'); */
+
 
 :root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     font-weight: 400;
 
-    color: #242424;
-    background-color: rgba(255, 255, 255, 0.87);
+    /* color: #242424;
+    background-color: rgba(255, 255, 255, 0.87); */
+
+    color: var(--white);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -36,4 +40,7 @@
     --blue-2: #1F212D;
 
 
+}
+body{
+  /* background-color: var(--dark-blue); */
 }
