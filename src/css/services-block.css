@@ -1,5 +1,142 @@
 /* Olga Filipenko */
 
-.services{
-    background-color: rgb(193, 183, 209);
+
+.section-service {
+    
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #11131F;
+    
+}
+
+.service-list {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.service-item {
+position: relative;
+z-index: 1;
+}
+
+.service-img {
+    border-radius: 40px;
+}
+
+
+.service-button {
+
+    position: absolute;
+
+    display: inline-flex;
+    padding: 14px 28px;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 60px;
+    border: none;
+    background: var(--white, #F6F5EF);
+    color: var(--dark-blue, #11131F);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+
+    letter-spacing: -0.63px;
+
+    bottom: 24px;
+    left: 24px;
+
+}
+
+.service-container {
+    
+    position: relative;
+}
+
+.service-container::after{
+
+    display: block;
+    position: absolute;
+    content: "";
+    width: 323px;
+        height: 323px;
+        transform: rotate(-44.916deg);
+        flex-shrink: 0;
+        border-radius: 323px;
+        opacity: 0.6000000238418579;
+        background: #91AFBA;
+        filter: blur(100px);
+
+        top: 319px;
+        left: -200px;
+        z-index: 0;
+      
+}
+
+
+@media screen and (min-width: 768px) {
+    .section-service {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    .service-list {
+            gap: 32px;
+        }
+    .service-item-two{
+        margin-left: auto;
+    }
+    .service-item-three{
+
+    margin-right: 200px;
+    }
+    .service-button{
+bottom: 32px;
+    left: 32px;
+        }
+    .service-container::after {
+        width: 414px;
+        height: 414px;
+        top: 580px;
+        left: -240px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .section-service {
+            padding-top: 82px;
+            padding-bottom: 82px;
+        }
+.service-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.service-item-one{
+    width: 712px;
+}
+.service-item-two {
+    width: 440px;
+    margin: 0;
+}
+.service-item-three {
+
+    margin-right: 90px;
+}
+ .service-container::after {
+     width: 414px;
+     height: 414px;
+     top: 227px;
+     left: -207px;
+     
+ }
+
 }
