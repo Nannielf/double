@@ -104,6 +104,9 @@
   }
 }
 
+.rent-image {
+  display: block;
+}
 .form-label {
   display: flex;
   flex-direction: column;
@@ -212,7 +215,7 @@
 }
 .modal {
   padding: 40px 24px;
-  /* position: absolute; */
+  position: absolute;
   top: 50%;
   left: 50%;
 

@@ -4,7 +4,37 @@
   <div class="container rent-container">
     <div class="rent-description">
       <h2 class="rent-title">Rent a yacht now</h2>
-      <div class="rent-image"></div>
+      <picture class="rent-image">
+        <source
+          srcset="
+            ./img/rent/yaht_desktop_1x.png 1x,
+            ./img/rent/yaht_desktop_2x.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./img/rent/yaht_tablet_1x.png 1x,
+            ./img/rent/yaht_tablet_2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./img/rent/yaht_mobile_1x.png 1x,
+            ./img/rent/yaht_mobile_2x.png 2x
+          "
+          media="(min-width: 375px)"
+          type="image/png"
+        />
+        <img
+          class="img-yaht"
+          src="./img/rent/yaht_desktop_1x.png"
+          alt="sailing yaht"
+        />
+      </picture>
     </div>
     <div class="form-container">
       <form class="rent-form" name="rent_form" autocomplete="off">
