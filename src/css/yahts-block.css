@@ -1,8 +1,27 @@
-/* Руслан Афанасьев */
+  /* Руслан Афанасьев */
 
 .yahts-section {
   padding: 40px 0;
 }
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: var(--dark-blue, #11131f);
+}
+
 .swiper {
   width: 335px;
   height: 469px;
@@ -17,6 +36,46 @@
   font-weight: 500;
   line-height: 110%; /* 39.6px */
   letter-spacing: -1.62px;
+.yahts-section {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.container-swiper {
+  position: relative;
+}
+.container-swiper::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 255px;
+  height: 255px;
+  transform: rotate(-44.916deg);
+  flex-shrink: 0;
+  border-radius: 323px;
+  opacity: 0.6000000238418579;
+  background: #91afba;
+  filter: blur(100px);
+
+  top: -50px;
+  left: -60px;
+  z-index: 0;
+}
+.container-swiper::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 195px;
+  height: 195px;
+  transform: rotate(-44.916deg);
+  flex-shrink: 0;
+  border-radius: 323px;
+  opacity: 0.6000000238418579;
+  background: #91afba;
+  filter: blur(100px);
+
+  top: -50px;
+  left: 160px;
+  z-index: 0;
 }
 .yahtsblock-bt {
   padding: 12px 28px;
@@ -49,6 +108,7 @@
 }
 .yahtsblock-tittle {
   max-width: 308px;
+  max-width: 310px;
   color: var(--white, #f6f5ef);
   font-family: DM Sans;
   font-size: 36px;
@@ -128,4 +188,8 @@
   gap: 32px;
   margin-top: 24px;
   margin-left: 24px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  margin-top: 220px;
 }
