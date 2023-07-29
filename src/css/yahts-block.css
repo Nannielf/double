@@ -1,45 +1,32 @@
-  /* Руслан Афанасьев */
-
 .yahts-section {
   padding: 40px 0;
 }
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@media only screen and (min-width: 768px) {
+  .yahts-section {
+    padding: 50px 0;
+  }
 }
-body {
-  background: var(--dark-blue, #11131f);
+@media only screen and (min-width: 1280px) {
+  .yahts-section {
+    padding: 82px 0;
+  }
 }
-
 .swiper {
   width: 335px;
   height: 469px;
   margin: 0 auto;
 }
-
-.yahtsblock-tittle {
-  color: var(--white, #f6f5ef);
-  font-family: DM Sans;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%; /* 39.6px */
-  letter-spacing: -1.62px;
-.yahts-section {
-  padding-bottom: 40px;
-  padding-top: 40px;
+@media only screen and (min-width: 768px) {
+  .swiper {
+    width: 704px;
+  }
 }
+@media only screen and (min-width: 1280px) {
+  .swiper {
+    width: 1216px;
+  }
+}
+
 .container-swiper {
   position: relative;
 }
@@ -55,10 +42,25 @@ body {
   opacity: 0.6000000238418579;
   background: #91afba;
   filter: blur(100px);
-
   top: -50px;
   left: -60px;
   z-index: 0;
+}
+@media only screen and (min-width: 768px) {
+  .container-swiper::after {
+    top: -50px;
+    left: 10px;
+    width: 399px;
+    height: 399px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container-swiper::after {
+    top: -50px;
+    left: 160px;
+    width: 414px;
+    height: 414px;
+  }
 }
 .container-swiper::before {
   display: block;
@@ -72,10 +74,25 @@ body {
   opacity: 0.6000000238418579;
   background: #91afba;
   filter: blur(100px);
-
   top: -50px;
   left: 160px;
   z-index: 0;
+}
+@media only screen and (min-width: 768px) {
+  .container-swiper::before {
+    top: -50px;
+    left: 420px;
+    width: 304px;
+    height: 304px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container-swiper::before {
+    top: -50px;
+    left: 650px;
+    width: 316px;
+    height: 316px;
+  }
 }
 .yahtsblock-bt {
   padding: 12px 28px;
@@ -89,25 +106,40 @@ body {
   line-height: 110%;
   letter-spacing: -0.63px;
   background: var(--dark-blue, #11131f);
+  margin-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .yahtsblock-bt {
+    font-size: 18px;
+    letter-spacing: -0.81px;
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yahtsblock-bt {
+    margin-bottom: 164px;
+  }
+}
 
-  margin-bottom: 94px;
-}
-.container {
-  padding: 0 20px;
-  margin: 0 auto;
-  max-width: 375px;
-  min-width: 320px;
-}
 .yahtsblock-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  /* max-width: 335px; */
   margin: 0 auto;
 }
+@media only screen and (min-width: 768px) {
+  .yahtsblock-container {
+    width: 632px;
+    gap: 64px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yahtsblock-container {
+    width: 882px;
+  }
+}
 .yahtsblock-tittle {
-  max-width: 308px;
   max-width: 310px;
   color: var(--white, #f6f5ef);
   font-family: DM Sans;
@@ -117,10 +149,24 @@ body {
   line-height: 110%;
   letter-spacing: -1.62px;
 }
+@media only screen and (min-width: 768px) {
+  .yahtsblock-tittle {
+    max-width: 641px;
+    font-size: 70px;
+    line-height: 110%; /* 77px */
+    letter-spacing: -3.15px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yahtsblock-tittle {
+    max-width: 882px;
+    font-size: 100px;
+    line-height: 110%; /* 110px */
+    letter-spacing: -4.5px;
+  }
+}
 .yahtsblock-subject {
   color: var(--white, #f6f5ef);
-  /* text-overflow: ellipsis; */
-  /* whitespace: nowrap; */
   font-family: DM Sans;
   font-size: 16px;
   font-style: normal;
@@ -155,9 +201,6 @@ body {
   border-radius: 24px;
   margin-top: 18px;
   margin-left: 18px;
-
-  /* background: url(<path-to-image>),
-    lightgray -6.748px 0px / 115.615% 106.773% no-repeat; */
 }
 .yahtsblock-item {
   color: var(--white, #f6f5ef);
@@ -191,5 +234,5 @@ body {
 }
 .swiper-button-next,
 .swiper-button-prev {
-  margin-top: 220px;
+  margin-top: 180px;
 }
