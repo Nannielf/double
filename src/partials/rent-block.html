@@ -81,7 +81,7 @@
         <button type="submit" class="form-btn js-open-modal" data-modal="1">
           Send
           <svg class="form-icon" width="18" height="9">
-            <use href=""></use>
+            <use href="./images/icons.svg#icon-arrow1"></use>
           </svg>
         </button>
       </form>
@@ -90,11 +90,33 @@
 </section>
 <div class="modal" data-modal="1">
   <button type="button" class="modal-close js-modal-close">
-    <svg class="close-icon" width="24" height="24">
-      <use href=""></use>
+    <svg class="close-icon" width="20" height="20">
+      <use href="./images/icons.svg#icon-close"></use>
     </svg>
   </button>
-  <img src="" alt="yaht" width="287" />
+  <picture class="modal-image">
+    <source
+      srcset="
+        ./img/rent/modal_yaht_desk-tab_1x.png 1x,
+        ./img/rent/modal_yaht_desk-tab_2x.png 2x
+      "
+      media="(min-width: 768px)"
+      type="image/png"
+    />
+    <source
+      srcset="
+        ./img/rent/modal_yaht_mobile_1x.png 1x,
+        ./img/rent/modal_yaht_mobile_2x.png 2x
+      "
+      media="(min-width: 375px)"
+      type="image/png"
+    />
+    <img
+      class="modal-yaht"
+      src="./img/rent/modal_yaht_desk-tab_1x.png"
+      alt="yaht"
+    />
+  </picture>
   <p class="modal-caption">Thank you</p>
   <p class="modal-text">
     Thank you for choosing Yacht Adventures, your booking details have been
@@ -103,78 +125,3 @@
   </p>
 </div>
 <div class="backdrop js-backdrop-modal"></div>
-<script type="text/javascript">
-  !(function (e) {
-    'function' != typeof e.matches &&
-      (e.matches =
-        e.msMatchesSelector ||
-        e.mozMatchesSelector ||
-        e.webkitMatchesSelector ||
-        function (e) {
-          for (
-            var t = this,
-              o = (t.document || t.ownerDocument).querySelectorAll(e),
-              n = 0;
-            o[n] && o[n] !== t;
-
-          )
-            ++n;
-          return Boolean(o[n]);
-        }),
-      'function' != typeof e.closest &&
-        (e.closest = function (e) {
-          for (var t = this; t && 1 === t.nodeType; ) {
-            if (t.matches(e)) return t;
-            t = t.parentNode;
-          }
-          return null;
-        });
-  })(window.Element.prototype);
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var modalButtons = document.querySelectorAll('.js-open-modal'),
-      overlay = document.querySelector('.js-backdrop-modal'),
-      closeButtons = document.querySelectorAll('.js-modal-close');
-
-    modalButtons.forEach(function (item) {
-      item.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        var modalId = this.getAttribute('data-modal'),
-          modalElem = document.querySelector(
-            '.modal[data-modal="' + modalId + '"]'
-          );
-
-        modalElem.classList.add('active');
-        overlay.classList.add('active');
-      });
-    });
-
-    closeButtons.forEach(function (item) {
-      item.addEventListener('click', function (e) {
-        var parentModal = this.closest('.modal');
-
-        parentModal.classList.remove('active');
-        overlay.classList.remove('active');
-      });
-    }); // end foreach
-
-    document.body.addEventListener(
-      'keyup',
-      function (e) {
-        var key = e.keyCode;
-
-        if (key == 27) {
-          document.querySelector('.modal.active').classList.remove('active');
-          document.querySelector('.backdrop').classList.remove('active');
-        }
-      },
-      false
-    );
-
-    overlay.addEventListener('click', function () {
-      document.querySelector('.modal.active').classList.remove('active');
-      this.classList.remove('active');
-    });
-  });
-</script>
