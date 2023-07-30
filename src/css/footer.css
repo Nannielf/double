@@ -66,6 +66,9 @@ footer {
         padding-bottom: 14px;
         justify-content: center
 }
+    .spisok_vnizu_stranici {
+        display: flex;
+}
 }
 
 
@@ -77,6 +80,7 @@ footer {
         height: 280px;
         flex-shrink: 0;
         white-space: nowrap;
+        display: flex;
     }
     .line_footer {
         width: 704px;
@@ -94,8 +98,7 @@ footer {
     }
     .social_footer {
         display: inline-block;
-        padding-left: 302px;
-        padding-top: 64px;
+        padding-left: 143px;
     }
     .container_menu_footer {
         display: inline-block;
@@ -104,6 +107,7 @@ footer {
     .social_icons {
         display: flex;
         gap: 16px;
+        padding-top: 16px;
     }
     .tekst_vnizu_stranici_container {
         padding-top: 100px;
@@ -124,7 +128,15 @@ footer {
     }
 }
 
-
+.ramka {border-radius: 6px;
+    border: 1px solid rgba(246, 245, 239, 0.50);
+    width: 32px;
+    height: 32px;
+    padding: 7.2px;
+    justify-content: center;
+    align-items: center;
+    fill: white;
+}
 
 .logo_and_title {
     display: flex;
