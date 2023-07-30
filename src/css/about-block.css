@@ -95,9 +95,10 @@ a {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -1.08px;
-    background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+    background: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
     background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: transparent;
 }
 @media only screen and (min-width: 768px) {
@@ -166,9 +167,3 @@ a {
   } 
 }
 
-.about-image-item {
-}
-.about-image1 {
-}
-.about-image2 {
-}
