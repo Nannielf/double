@@ -157,7 +157,8 @@
 */
 
 .menu-container {
-
+  width: 375px;
+  height: 812px;
   position: fixed;
   top: 0;
   left: 0;
@@ -193,10 +194,10 @@
 
 .mob-logo-section {
   display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-  margin: 24px 20px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin: 24px 20px;
 
 }
 
@@ -255,9 +256,7 @@
 }
 
 .mobile-menu {
-
-
-  margin: 0 auto;
+ margin: 0 auto;
   margin-top: 140px;
 }
 
@@ -275,12 +274,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1.18;
-
   letter-spacing: 0.42px;
   text-transform: uppercase;
 
 }
 
-.mob-menu-link:not(:last-child) {
-  margin-bottom: 14px;
-}
