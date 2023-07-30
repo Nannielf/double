@@ -8,7 +8,6 @@ ol {
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
-    display: flex;
 }
 
 
@@ -67,7 +66,6 @@ footer {
         padding-bottom: 14px;
         justify-content: center
 }
-
 }
 
 
@@ -108,9 +106,24 @@ footer {
         gap: 16px;
     }
     .tekst_vnizu_stranici_container {
+        padding-top: 100px;
         padding-bottom: 16px;
     }
+    .tekst_vnizu_stranici {
+            color: rgba(246, 245, 239, 0.50);
+            text-align: center;
+            font-family: DM Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 118%;
+            letter-spacing: 0.42px;
+    }
+    .spisok_vnizu_stranici {
+        display: flex;
+    }
 }
+
 
 
 .logo_and_title {
@@ -129,13 +142,8 @@ footer {
     text-transform: uppercase;
 }
 
-.container_menu_footer {
-    gap:14px;
-}
 
 
-.tekst_vnizu_stranici_container {
-    display: flex;
-    gap: 14px;
-}
+
+
 
