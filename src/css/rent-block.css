@@ -41,7 +41,6 @@
 
   top: 360px;
   right: -160px;
-  /* left: 200px; */
   z-index: 0;
 }
 @media only screen and (min-width: 768px) {
@@ -52,7 +51,6 @@
     border-radius: 413px;
     top: 100px;
     right: -220px;
-    /* left: 530px; */
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -63,7 +61,6 @@
     border-radius: 414px;
     top: 180px;
     right: -150px;
-    /* left: 1000px; */
   }
 }
 

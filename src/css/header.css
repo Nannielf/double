@@ -1,6 +1,281 @@
 /* Kateryna Zhylan */
 
-.header {
-  background-color: aqua;
+/* Header styles */
+
+
+
+.header-item {
+  color: var(--white, #F6F5EF);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.yacht-adv {
+  fill: rgba(246, 245, 239, 1);
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .header-container {
+    width: 335px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 139px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 24px;
+  }
+
+  .logo-section {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .header-list {
+    display: none;
+
+  }
+
+  .favicon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .yacht-adv-icon {
+    max-width: 146px;
+    height: 10px;
+  }
+
+  .header-container::after {
+    content: "";
+    position: absolute;
+    top: 72px;
+    left: 20px;
+    right: 20px;
+    display: block;
+    height: 1px;
+    width: 335px;
+    background-color: rgba(246, 245, 239, 0.20);
+
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .header-container {
+    width: 704px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 269px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 32px;
+  }
+
+  .logo-section {
+    display: flex;
+    width: 217px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .header-container::after {
+    content: "";
+    position: absolute;
+    top: 87px;
+    left: 32px;
+    right: 32px;
+    display: block;
+    height: 1px;
+    width: 704px;
+    background-color: rgba(246, 245, 239, 0.20);
+
+  }
+
+}
+
+@media only screen and (min-width: 1280px) {
+  .header-container {
+    width: 1216px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 750px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 32px;
+
+  }
+
+  .logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+  }
+
+  .header-container::after {
+    content: "";
+    position: absolute;
+    top: 87px;
+    left: 32px;
+    right: 32px;
+    display: block;
+    height: 1px;
+    width: 1216px;
+    background-color: rgba(246, 245, 239, 0.20);
+
+  }
+
+}
+
+/**
+  |============================
+  | Mobile MENU styles
+  |============================
+*/
+
+.menu-container {
+  width: 375px;
+  height: 812px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  background-color: rgba(17, 19, 31, 1);
+
+}
+
+.menu-toggle {
+
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding-right: 20px;
+
+
+}
+
+.mob-close-icon {
+  fill: rgba(246, 245, 239, 1);
+
+}
+
+.mob-logo-section {
+  display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin: 24px 20px;
+
+}
+
+.menu-burger {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+
+}
+
+.mob-logo-section::after {
+  content: "";
+  position: absolute;
+  top: 72px;
+  left: 20px;
+  right: 20px;
+  display: block;
+  height: 1px;
+  width: 335px;
+  background-color: rgba(246, 245, 239, 0.20);
+
+}
+
+
+
+@media (min-width: 768px) {
+  .menu-burger {
+    display: none;
+  }
+
+}
+
+.icon-burger {
+  fill: rgba(246, 245, 239, 1);
+}
+
+.icon-close {
+  stroke: rgba(246, 245, 239, 1);
+}
+
+
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  color: rgba(17, 19, 31, 1);
+}
+
+.mobile-menu {
+ margin: 0 auto;
+  margin-top: 140px;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 14px;
+  text-decoration: none;
+
+}
+
+.mob-menu-link {
+  color: var(--white, #F6F5EF);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+
 }
 
