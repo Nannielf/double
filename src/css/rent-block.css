@@ -26,7 +26,7 @@
   }
 }
 
-/* .rent-container::after {
+.rent-container::after {
   display: block;
   position: absolute;
   content: '';
@@ -40,7 +40,8 @@
   filter: blur(100px);
 
   top: 436px;
-  left: 200px;
+  right: -80px;
+  /* left: 200px; */
   z-index: 0;
 }
 @media only screen and (min-width: 768px) {
@@ -50,7 +51,8 @@
     transform: rotate(-44.094deg);
     border-radius: 413px;
     top: 100px;
-    left: 530px;
+    right: -220px;
+    /* left: 530px; */
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -60,9 +62,10 @@
     transform: rotate(-45.074deg);
     border-radius: 414px;
     top: 180px;
-    left: 1000px;
+    right: -150px;
+    /* left: 1000px; */
   }
-} */
+}
 
 @media only screen and (max-width: 767px) {
   .rent-description {
