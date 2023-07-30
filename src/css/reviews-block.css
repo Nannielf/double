@@ -1,7 +1,7 @@
 /* Ruslan Trofimov */
 
-.reviews{
-    background-color: rgb(240, 206, 232);
+.reviews {
+  background-color: rgb(240, 206, 232);
 }
 
 p,
@@ -131,63 +131,6 @@ ul {
   justify-content: flex-end;
 }
 
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
-  .review-block-title {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 88px;
-  }
-
-  .review-block-h_three {
-    max-width: 497px;
-    font-size: 32px;
-    letter-spacing: -1.44px;
-  }
-
-  .review-block-YA-font {
-    font-size: 32px;
-    letter-spacing: -1.44px;
-  }
-
-  .review-block-title-p {
-    max-width: 273px;
-    padding-top: 32px;
-    font-size: 16px;
-    letter-spacing: -0.32px;
-    margin-left: auto;
-  }
-
-  .review-block-img {
-    padding-bottom: 24px;
-  }
-
-  .review-block-h_four {
-    font-size: 18px;
-    letter-spacing: -0.81px;
-  }
-
-  .review-block-p {
-    font-size: 16px;
-    letter-spacing: -0.32px;
-    padding-bottom: 24px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  .review-block-link {
-    margin-top: 45px;
-    margin-bottom: 16px;
-    width: 68px;
-    height: 68px;
-  }
-
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
     max-width: 768px;
@@ -244,4 +187,59 @@ ul {
     height: 68px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
 
+  .review-block-title {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 88px;
+  }
+
+  .review-block-h_three {
+    max-width: 497px;
+    font-size: 32px;
+    letter-spacing: -1.44px;
+  }
+
+  .review-block-YA-font {
+    font-size: 32px;
+    letter-spacing: -1.44px;
+  }
+
+  .review-block-title-p {
+    max-width: 273px;
+    padding-top: 32px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    margin-left: auto;
+  }
+
+  .review-block-img {
+    padding-bottom: 24px;
+  }
+
+  .review-block-h_four {
+    font-size: 18px;
+    letter-spacing: -0.81px;
+  }
+
+  .review-block-p {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .review-block-link {
+    margin-top: 45px;
+    margin-bottom: 16px;
+    width: 68px;
+    height: 68px;
+  }
+}
