@@ -23,7 +23,7 @@
 }
 @media only screen and (min-width: 1280px) {
   .swiper {
-    width: 1216px;
+    width: 1094px;
   }
 }
 
@@ -197,10 +197,33 @@
   background: var(--blue-2, #1f212d);
   border-radius: 24px;
 }
+@media only screen and (min-width: 768px) {
+  .swiper-slide {
+    max-width: 344px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .swiper-slide {
+    max-width: 354px;
+  }
+}
+
 .yahtsblock-img {
   border-radius: 24px;
   margin-top: 18px;
   margin-left: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .yahtsblock-img {
+    width: 312px;
+    height: 268px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yahtsblock-img {
+    width: 322px;
+    height: 268px;
+  }
 }
 .yahtsblock-item {
   color: var(--white, #f6f5ef);
@@ -234,5 +257,16 @@
 }
 .swiper-button-next,
 .swiper-button-prev {
-  margin-top: 180px;
+  /* margin-top: 180px; */
+}
+
+.swiper-button-prev {
+  fill: var(--white, #f6f5ef);
+  border-radius: 60px;
+  border: 1px solid var(--white, #f6f5ef);
+}
+.swiper-button-next {
+  fill: var(--white, #f6f5ef);
+  border-radius: 60px;
+  border: 1px solid var(--white, #f6f5ef);
 }
