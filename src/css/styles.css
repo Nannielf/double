@@ -39,6 +39,8 @@
     --white: #F6F5EF;
     --blue-2: #1F212D;
 
+    --anim: 400ms ease-in;
+
 
 }
 body{
