@@ -165,6 +165,25 @@
     letter-spacing: -4.5px;
   }
 }
+@media only screen and (max-width: 1279.98px) {
+  .mask-group {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .mask-group {
+    transform: rotate(7.506deg);
+    position: absolute;
+    top: 178px;
+    left: -56px;
+  }
+}
+.mask-group {
+  transform: rotate(7.506deg);
+  position: absolute;
+  top: ;
+  left: ;
+}
 .yahtsblock-subject {
   color: var(--white, #f6f5ef);
   font-family: DM Sans;
