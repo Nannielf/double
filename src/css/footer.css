@@ -76,10 +76,6 @@ footer {
            /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1157px){
     .container_footer{
-        width: 704px;
-        height: 280px;
-        flex-shrink: 0;
-        white-space: nowrap;
         display: flex;
     }
     .line_footer {
