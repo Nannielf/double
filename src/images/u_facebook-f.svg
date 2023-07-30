@@ -1,0 +1,29 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" fill="#E1E1E1"/>
+<g id="Mobile" clip-path="url(#clip0_0_1)">
+<rect width="375" height="6012" transform="translate(-20 -5912)" fill="#11131F"/>
+<g id="Ellipse 7268" opacity="0.6" filter="url(#filter0_f_0_1)">
+<ellipse cx="210" cy="210" rx="210" ry="210" transform="matrix(0.694658 -0.71934 0.704616 0.709589 -74 223)" fill="#93ABAE"/>
+</g>
+<g id="footer">
+<g id="social">
+<g id="soc networks">
+<g id="u:facebook-f">
+<path id="Vector" d="M18.4255 10.801H19.8878V8.32766C19.1798 8.25404 18.4684 8.2177 17.7566 8.21877C15.6411 8.21877 14.1944 9.50988 14.1944 11.8743V13.9121H11.8066V16.681H14.1944V23.7743H17.0566V16.681H19.4366L19.7944 13.9121H17.0566V12.1466C17.0566 11.3299 17.2744 10.801 18.4255 10.801Z" fill="#F6F5EF"/>
+<rect x="0.5" y="0.5" width="31" height="31" rx="5.5" stroke="#F6F5EF" stroke-opacity="0.5"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_0_1" x="-187.939" y="-191.238" width="815.574" height="824.38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_0_1"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="375" height="6012" fill="white" transform="translate(-20 -5912)"/>
+</clipPath>
+</defs>
+</svg>
