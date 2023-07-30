@@ -207,11 +207,7 @@
     max-width: 354px;
   }
 }
-.swiper-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
+
 .yahtsblock-img {
   border-radius: 24px;
   margin-top: 18px;
@@ -266,9 +262,11 @@
 
 .swiper-button-prev {
   fill: var(--white, #f6f5ef);
-  /* padding: 14px; */
+  border-radius: 60px;
+  border: 1px solid var(--white, #f6f5ef);
 }
 .swiper-button-next {
   fill: var(--white, #f6f5ef);
-  /* padding: 14px; */
+  border-radius: 60px;
+  border: 1px solid var(--white, #f6f5ef);
 }
