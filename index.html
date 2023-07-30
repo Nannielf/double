@@ -33,8 +33,8 @@
     <!-- загальні стилі -->
 
     
-    <script type="module" crossorigin src="/bestteam-ourteam/assets/index-5f2eb647.js"></script>
-    <link rel="stylesheet" href="/bestteam-ourteam/assets/index-562c45a5.css">
+    <script type="module" crossorigin src="/bestteam-ourteam/assets/index-f50489ea.js"></script>
+    <link rel="stylesheet" href="/bestteam-ourteam/assets/index-ebeee106.css">
   </head>
 
   <body>
@@ -493,8 +493,115 @@
       <!-- Надія Павлюченко -->
 
 <section class="rent">
-  <p>hello</p>
+  <div class="container rent-container">
+    <div class="rent-description">
+      <h2 class="rent-title">Rent a yacht now</h2>
+      <picture class="rent-image">
+        <source
+          srcset="/bestteam-ourteam/assets/yaht_desktop_1x-2e8537cb.png 1x, /bestteam-ourteam/assets/yaht_desktop_2x-21a56cc5.png 2x"
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <source
+          srcset="/bestteam-ourteam/assets/yaht_tablet_1x-3b3b3288.png 1x, /bestteam-ourteam/assets/yaht_tablet_2x-d98abfb8.png 2x"
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="/bestteam-ourteam/assets/yaht_mobile_1x-f8e451ae.png 1x, /bestteam-ourteam/assets/yaht_mobile_2x-6619a08a.png 2x"
+          media="(min-width: 375px)"
+          type="image/png"
+        />
+        <img
+          class="img-yaht"
+          src="/bestteam-ourteam/assets/yaht_desktop_1x-2e8537cb.png"
+          alt="sailing yaht"
+        />
+      </picture>
+    </div>
+    <div class="form-container">
+      <form class="rent-form" name="rent_form" autocomplete="off">
+        <label class="form-label">
+          <span class="label-text">Full Name</span>
+          <input
+            type="text"
+            class="form-input rent-input"
+            name="user_name"
+            id="user_name"
+            pattern="^[A-Z][a-z]+$"
+          />
+        </label>
+        <label class="form-label">
+          <span class="label-text">Email</span>
+          <input
+            type="email"
+            class="form-input rent-input"
+            name="user_email"
+            id="user_email"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          />
+        </label>
+        <label class="form-label">
+          <span class="label-text">Phone number</span>
+          <input
+            type="tel"
+            class="form-input rent-input"
+            name="user_tel"
+            id="user_tel"
+            pattern="^(?:\+?38)?0\d{9}$"
+          />
+        </label>
+        <label class="form-textarea-label">
+          <span class="label-text">Comment</span>
+          <textarea
+            class="rent-input form-textarea"
+            rows="4"
+            name="user_comment"
+            id="user_comment"
+          >
+          </textarea>
+        </label>
+        <button type="submit" class="form-btn js-open-modal" data-modal="1">
+          Send
+          <svg class="form-icon" width="18" height="9">
+            <use href="/bestteam-ourteam/assets/icons-504c1391.svg#icon-arrow1"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
 </section>
+<div class="modal" data-modal="1">
+  <button type="button" class="modal-close js-modal-close">
+    <svg class="close-icon" width="20" height="20">
+      <use href="/bestteam-ourteam/assets/icons-504c1391.svg#icon-close"></use>
+    </svg>
+  </button>
+  <picture class="modal-image">
+    <source
+      srcset="/bestteam-ourteam/assets/modal_yaht_desk-tab_1x-624a5f53.png 1x, /bestteam-ourteam/assets/modal_yaht_desk-tab_2x-179561f8.png 2x"
+      media="(min-width: 768px)"
+      type="image/png"
+    />
+    <source
+      srcset="/bestteam-ourteam/assets/modal_yaht_mobile_1x-c15e33d8.png 1x, /bestteam-ourteam/assets/modal_yaht_mobile_2x-0d9dbf5c.png 2x"
+      media="(min-width: 375px)"
+      type="image/png"
+    />
+    <img
+      class="modal-yaht"
+      src="/bestteam-ourteam/assets/modal_yaht_desk-tab_1x-624a5f53.png"
+      alt="yaht"
+    />
+  </picture>
+  <p class="modal-caption">Thank you</p>
+  <p class="modal-text">
+    Thank you for choosing Yacht Adventures, your booking details have been
+    received and our team will be in touch shortly to confirm your reservation
+    and provide any additional information or assistance you may need.
+  </p>
+</div>
+<div class="backdrop js-backdrop-modal"></div>
 
       <!-- Ruslan Trofimov -->
 
