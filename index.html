@@ -33,8 +33,8 @@
     <!-- загальні стилі -->
 
     
-    <script type="module" crossorigin src="/bestteam-ourteam/assets/index-51904e9e.js"></script>
-    <link rel="stylesheet" href="/bestteam-ourteam/assets/index-422e1f2b.css">
+    <script type="module" crossorigin src="/bestteam-ourteam/assets/index-8a82c58a.js"></script>
+    <link rel="stylesheet" href="/bestteam-ourteam/assets/index-e212799a.css">
   </head>
 
   <body>
@@ -530,7 +530,7 @@
       </picture>
     </div>
     <div class="form-container">
-      <form class="rent-form" name="rent_form" autocomplete="off">
+      <form class="rent-form" name="rent_form" autocomplete="off" method="post">
         <label class="form-label">
           <span class="label-text">Full Name</span>
           <input
@@ -539,6 +539,7 @@
             name="user_name"
             id="user_name"
             pattern="^[A-Z][a-z]+$"
+            required
           />
         </label>
         <label class="form-label">
@@ -548,7 +549,8 @@
             class="form-input rent-input"
             name="user_email"
             id="user_email"
-            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            pattern="^[^@]+@([^@\.]+\.)+[^@\.]+$"
+            required
           />
         </label>
         <label class="form-label">
@@ -559,6 +561,7 @@
             name="user_tel"
             id="user_tel"
             pattern="^(?:\+?38)?0\d{9}$"
+            required
           />
         </label>
         <label class="form-textarea-label">
@@ -571,7 +574,12 @@
           >
           </textarea>
         </label>
-        <button type="submit" class="form-btn js-open-modal" data-modal="1">
+        <button
+          type="submit"
+          class="form-btn js-open-modal"
+          id="button-open"
+          data-modal="1"
+        >
           Send
           <svg class="form-icon" width="18" height="9">
             <use href="/bestteam-ourteam/assets/icons-504c1391.svg#icon-arrow1"></use>
