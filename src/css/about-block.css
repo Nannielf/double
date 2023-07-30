@@ -1,6 +1,6 @@
 /* Olena Demydova */
 
-  /* Убрать после подключения общих */
+  /* Убрать после подключения общих
 h1,
 h2,
 h3,
@@ -20,14 +20,11 @@ padding-left: 0;
 a {
     text-decoration:none;
     color:currentColor
-  }
+  } */
 
 .about {
-  /* Убрать после подключения общих */
-  background-color: #11131F;
-  padding: 40px 20px;
-
 }
+
 .about-block {
   max-width: 355px;
   margin: 0 auto;
@@ -53,14 +50,11 @@ a {
 @media only screen and (min-width: 768px) {
   .about-text-block {
       margin-bottom: 64px;
-
-    
   } 
 }
 @media only screen and (min-width: 1280px) {
   .about-text-block {
     justify-content: space-between;
-
   }
   }
 
@@ -95,9 +89,10 @@ a {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -1.08px;
-    background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+    background: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
     background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: transparent;
 }
 @media only screen and (min-width: 768px) {
@@ -166,9 +161,3 @@ a {
   } 
 }
 
-.about-image-item {
-}
-.about-image1 {
-}
-.about-image2 {
-}
