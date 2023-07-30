@@ -103,9 +103,10 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
+  z-index: 10;
   line-height: 110%;
   letter-spacing: -0.63px;
-  background: var(--dark-blue, #11131f);
+  background-color: rgba(17, 19, 31, 0);
   margin-bottom: 80px;
 }
 @media only screen and (min-width: 768px) {
@@ -181,8 +182,6 @@
 .mask-group {
   transform: rotate(7.506deg);
   position: absolute;
-  top: ;
-  left: ;
 }
 .yahtsblock-subject {
   color: var(--white, #f6f5ef);
