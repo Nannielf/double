@@ -1,4 +1,4 @@
-/* Ruslan Trofimov */
+/* Ruslan Trofimov 
 
 new Swiper('.swiper-container', {
 
@@ -11,3 +11,4 @@ new Swiper('.swiper-container', {
     slidesPerView: 1,
 });
 
+*/
