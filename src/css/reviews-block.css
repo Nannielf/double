@@ -1,3 +1,7 @@
+.review-block-images {
+  display: none;
+}
+
 .review-block-title {
   display: flex;
   flex-wrap: wrap;
