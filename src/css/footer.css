@@ -25,6 +25,25 @@ footer {
         width:704px;
         height: 280px;
     }
+    .footer_container {
+        margin-top: 40px;
+    }
+    .footer_container::after {
+            display: block;
+                position: absolute;
+                content: "";
+                width: 323px;
+                height: 323px;
+                transform: rotate(-44.916deg);
+                flex-shrink: 0;
+                border-radius: 323px;
+                opacity: 0.6000000238418579;
+                background: #91AFBA;
+                filter: blur(100px);
+                left: 200px;
+                z-index: 0;
+
+    }
     .container_footer {
         width: 335px;
         height: 334px;
@@ -43,8 +62,7 @@ footer {
     .footer_logo_and_title {
         display: flex;
         align-items: center;
-        padding-top: 44px;
-        padding-bottom: 44px;
+        margin-bottom: 44px;
         gap: 8px;
         fill: white;
     }
@@ -56,9 +74,6 @@ display: flex;
 flex-direction: column;
 gap: 14px;
  }
-    .social_footer {
-        padding-top: 40px;
-    }
 .social_footer_text{
     margin-bottom: 16px;
 }
@@ -94,28 +109,36 @@ gap: 14px;
     .spisok_vnizu_stranici {
         display: flex;
         gap: 14px;
-        padding-top: 40px;
+        margin-top: 40px;
         padding-bottom: 14px;
         justify-content: center;
 }
+    .container_menu_footer {
+    margin-bottom: 40px;
+}
+
 }
 
 
              
            /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px){
-
+@media screen and (min-width: 768px) {
+    .footer_container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
     .line_footer {
         width: 704px;
         height: 0px;
         flex-shrink: 0;
+        margin-bottom: 64px;
     }
-    .container_logo_and_title {
-        display: inline-block;
-    }
+
     .menu_footer {
-        display: inline-block;
-        
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
     .icon_settings {
         fill: white;
@@ -123,9 +146,12 @@ gap: 14px;
     .footer_logo_and_title {
         display: flex;
         align-items: center;
+        gap: 8px;
     }
     .social_footer {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
     .container_menu_footer {
         display: inline-block;
@@ -150,6 +176,12 @@ gap: 14px;
     }
     .spisok_vnizu_stranici {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:32px;
+    }
+    .container_vnizu_stranici {
+        margin-bottom: 16px;
     }
 }
 
