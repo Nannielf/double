@@ -26,18 +26,7 @@ a {
 }
 
 .about-block {
-  max-width: 355px;
   margin: 0 auto;
-}
-@media only screen and (min-width: 768px) {
-  .about-block {
-    max-width: 704px;
-  } 
-}
-@media only screen and (min-width: 1280px) {
-  .about-block {
-    max-width: 1216px;
-  } 
 }
 .about-text-block {
     display: flex;
@@ -117,13 +106,19 @@ a {
     .about-small-text {
         gap:32px;
         margin-left: auto;
-        width: 400px;
 
         font-size: 16px;
         letter-spacing: -0.32px;
   }
 }
-
+.about-small-item {
+  width: 160px;
+}
+@media only screen and (min-width: 768px) {
+  .about-small-item {
+    width: 184px;
+  } 
+}
 .about-image-block {
   margin: 0 auto;
 }
