@@ -1,3 +1,5 @@
+import '/js/rent-block.js';
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
