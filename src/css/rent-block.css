@@ -3,6 +3,7 @@
 .rent {
   font-family: DM Sans, sans-serif;
   padding: 40px 0;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
