@@ -18,6 +18,7 @@
 .header-list {
   display: flex;
   justify-content: center;
+  
   align-items: center;
   gap: 24px;
 }
@@ -30,24 +31,22 @@
 
 @media only screen and (max-width: 767px) {
   .header-container {
-    width: 335px;
-   display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 24px;
-    gap: 120px;
+  
    
   }
+.logo-section {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 
-  .logo-section {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    
-  }
+}
 
   .header-list {
     display: none;
@@ -209,7 +208,8 @@
   cursor: pointer;
   border: none;
   outline: none;
-  margin-right: 20px;
+  
+ 
 
 }
 
