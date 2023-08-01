@@ -19,7 +19,7 @@ footer {
     background-color: var(--dark-blue);
 }
 
-       /* Mobile */
+          /* Mobile */
 @media screen and (max-width:767px) {
     .position{
         position: relative;
@@ -28,26 +28,8 @@ footer {
     .footer_container {
         width:704px;
         height: 280px;
-    }
-    .footer_container {
         margin-top: 40px;
     }
-    /* .footer_container::after {
-                display: block;
-                position: absolute;
-                content: "";
-                width: 323px;
-                height: 323px;
-                transform: rotate(-44.916deg);
-                flex-shrink: 0;
-                border-radius: 323px;
-                opacity: 0.6000000238418579;
-                background: #91AFBA;
-                filter: blur(100px);
-                left: 200px;
-                z-index: 0;
-                overflow: hidden;
-    } */
     .container_footer {
         width: 335px;
         height: 334px;
@@ -62,7 +44,12 @@ footer {
         flex-shrink: 0;
         stroke-width: 1px;
         stroke: rgba(246, 245, 239, 0.10);
+        border: none;
+        height: 2px;
+        background-color: grey;
+        background-color: rgba(246, 245, 239, 0.20);
     }
+
     .footer_logo_and_title {
         display: flex;
         align-items: center;
@@ -70,11 +57,9 @@ footer {
         gap: 8px;
         fill: white;
     }
-
 .icon_footer_yacht{
     fill: var(--linear-green);
 }
-
  .menu_footer{
 display: flex;
 flex-direction: column;
@@ -85,9 +70,7 @@ gap: 14px;
     margin-bottom: 16px;
 
 }
-    .text_main_footer{
-        
-    }
+
 
     .tekst_vnizu_stranici {
         color: rgba(246, 245, 239, 0.50);
@@ -98,9 +81,6 @@ gap: 14px;
         line-height: 118%;
         letter-spacing: 0.36px;
     }
-    .text_main_footer {
-        /* margin-bottom: 16px; */
-    }
     .social_icons {
         display: flex;
         gap: 14px;
@@ -110,6 +90,7 @@ gap: 14px;
         stroke: rgba(246, 245, 239, 0.50);
         fill: var(--white);
     }
+              /* КРУГИ */
 .container_vnizu_stranici::after{
     display: block;
         position: absolute;
@@ -141,7 +122,6 @@ gap: 14px;
     .container_menu_footer {
     margin-bottom: 40px;
 }
-
 }
 
 
@@ -152,17 +132,10 @@ gap: 14px;
         position: relative;
         overflow: hidden;
     }
-
     .footer_container {
         display: flex;
         justify-content: space-between;
         margin-bottom: 100px;
-    }
-    .line_footer {
-        width: 704px;
-        height: 0px;
-        flex-shrink: 0;
-        margin-bottom: 64px;
     }
     .menu_footer {
         display: flex;
@@ -212,22 +185,17 @@ gap: 14px;
     .container_vnizu_stranici {
         margin-bottom: 16px;
     }
-        .container_vnizu_stranici::after {
-            display: block;
-            position: absolute;
-            content: "";
-            width: 419px;
-            height: 419px;
-            transform: rotate(-44.916deg);
+        .line_footer {
+            width: 704px;
+            height: 0px;
             flex-shrink: 0;
-            border-radius: 419px;
-            opacity: 0.60;
-            background: #91AFBA;
-            filter: blur(100px);
-            top: 263;
-            left: 220px;
-            z-index: 0;
-            
+            stroke-width: 1px;
+            stroke: rgba(246, 245, 239, 0.10);
+            border: none;
+            height: 2px;
+            background-color: grey;
+            background-color: rgba(246, 245, 239, 0.20);
+            margin-bottom: 64px;
         }
 }
 
@@ -263,6 +231,14 @@ gap: 14px;
 @media only screen and (min-width: 1280px) {
 .line_footer{
     width: 1216px;
+    height: 0px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: rgba(246, 245, 239, 0.10);
+    border: none;
+    height: 2px;
+    background-color: grey;
+    background-color: rgba(246, 245, 239, 0.20);
   }
 }
 
