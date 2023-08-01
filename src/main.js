@@ -1,7 +1,5 @@
 import '/js/rent-block.js';
 
-import '/js/mobile-menu.js';
-
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -22,4 +20,8 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+  spaceBetween: 16,
+  // SlidesPerGroup: 0,
 });
+
+import '/js/mobile-menu.js';
