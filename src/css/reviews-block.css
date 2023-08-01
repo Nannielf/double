@@ -39,7 +39,6 @@
 }
 
 .review-block-images {
-  display: none;
   gap: 32px;
   background-color: var(--dark-white-color);
 }
@@ -171,10 +170,6 @@
     display: flex;
     gap: 32px;
     background-color: var(--dark-white-color);
-  }
-
-  .swiper-container {
-    display: none;
   }
 
   .review-block-images-bkg {
