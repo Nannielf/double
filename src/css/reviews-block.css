@@ -48,6 +48,14 @@
   background: #1f212d;
 }
 
+.card-two {
+  display: none;
+}
+
+.card-three {
+  display: none;
+}
+
 .review-block-img {
   display: flex;
   margin: 0 auto;
@@ -119,6 +127,10 @@
 
   .review-block-img {
     padding-bottom: 24px;
+  }
+
+  .card-three {
+    display: none;
   }
 
   .review-block-h_four {
