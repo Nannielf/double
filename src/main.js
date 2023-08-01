@@ -1,3 +1,10 @@
+<<<<<<< Updated upstream
+=======
+import '/js/rent-block.js';
+
+import '/js/mobile-menu.js';
+
+>>>>>>> Stashed changes
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
