@@ -1,5 +1,272 @@
-/* Vadym */
-
-.footer{
-    background-color: rgb(89, 248, 142);
+:root {
+    --dark-blue: #11131F;
+    --light-green: #93ABAE;
+    --linear-green: #BEC7C2;
+    --white: #F6F5EF;
+    --blue-2: #1F212D;
 }
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+footer {
+    background-color: var(--dark-blue);
+}
+
+       /* Mobile */
+@media screen and (max-width:767px) {
+    .position{
+        position: relative;
+        overflow: hidden;
+    }
+    .footer_container {
+        width:704px;
+        height: 280px;
+    }
+    .footer_container {
+        margin-top: 40px;
+    }
+    /* .footer_container::after {
+                display: block;
+                position: absolute;
+                content: "";
+                width: 323px;
+                height: 323px;
+                transform: rotate(-44.916deg);
+                flex-shrink: 0;
+                border-radius: 323px;
+                opacity: 0.6000000238418579;
+                background: #91AFBA;
+                filter: blur(100px);
+                left: 200px;
+                z-index: 0;
+                overflow: hidden;
+    } */
+    .container_footer {
+        width: 335px;
+        height: 334px;
+        flex-shrink: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 14px;
+    }
+    .line_footer {
+        width: 335px;
+        height: 0px;
+        flex-shrink: 0;
+        stroke-width: 1px;
+        stroke: rgba(246, 245, 239, 0.10);
+    }
+    .footer_logo_and_title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 44px;
+        gap: 8px;
+        fill: white;
+    }
+
+.icon_footer_yacht{
+    fill: var(--linear-green);
+}
+
+ .menu_footer{
+display: flex;
+flex-direction: column;
+gap: 14px;
+ }
+
+.social_footer_text{
+    margin-bottom: 16px;
+
+}
+    .text_main_footer{
+        
+    }
+
+    .tekst_vnizu_stranici {
+        color: rgba(246, 245, 239, 0.50);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 118%;
+        letter-spacing: 0.36px;
+    }
+    .text_main_footer {
+        /* margin-bottom: 16px; */
+    }
+    .social_icons {
+        display: flex;
+        gap: 14px;
+    }
+    .social_media_link {
+        stroke-width: 1px;
+        stroke: rgba(246, 245, 239, 0.50);
+        fill: var(--white);
+    }
+.container_vnizu_stranici::after{
+    display: block;
+        position: absolute;
+        content: "";
+        width: 420px;
+        height: 420px;
+        transform: rotate(-44.916deg);
+        flex-shrink: 0;
+        border-radius: 420px;
+        opacity: 0.60;
+        background: #91AFBA;
+        filter: blur(100px);
+        top: 259px;
+        right: 5px;
+        z-index: 0;
+        overflow: hidden;
+}
+    .tekst_vnizu_stranici_container {
+        padding-top: 40px;
+        padding-bottom: 14px;
+}
+    .spisok_vnizu_stranici {
+        display: flex;
+        gap: 14px;
+        margin-top: 40px;
+        padding-bottom: 14px;
+        justify-content: center;
+}
+    .container_menu_footer {
+    margin-bottom: 40px;
+}
+
+}
+
+
+             
+           /* Tablet */
+@media screen and (min-width: 768px) {
+   .position {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .footer_container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .line_footer {
+        width: 704px;
+        height: 0px;
+        flex-shrink: 0;
+        margin-bottom: 64px;
+    }
+    .menu_footer {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .icon_settings {
+        fill: white;
+    }
+    .footer_logo_and_title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .social_footer {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .container_menu_footer {
+        display: inline-block;
+    }
+    .social_icons {
+        display: flex;
+        gap: 16px;
+    }
+    .social_media_link {
+        fill: white;
+    }
+
+    .tekst_vnizu_stranici {
+            color: rgba(246, 245, 239, 0.50);
+            text-align: center;
+            font-family: DM Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 118%;
+            letter-spacing: 0.42px;
+    }
+    .spisok_vnizu_stranici {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:32px;
+    }
+    .container_vnizu_stranici {
+        margin-bottom: 16px;
+    }
+        .container_vnizu_stranici::after {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 419px;
+            height: 419px;
+            transform: rotate(-44.916deg);
+            flex-shrink: 0;
+            border-radius: 419px;
+            opacity: 0.60;
+            background: #91AFBA;
+            filter: blur(100px);
+            top: 263;
+            left: 220px;
+            z-index: 0;
+            
+        }
+}
+
+
+
+.ramka {
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid rgba(246, 245, 239, 0.50);
+    width: 32px;
+    height: 32px;
+    padding: 7.2px;
+    justify-content: center;
+    align-items: center;
+    fill: white;
+}
+
+.logo_and_title {
+    display: flex;
+}
+
+
+.text_main_footer {
+    color: #F6F5EF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+@media only screen and (min-width: 1280px) {
+.line_footer{
+    width: 1216px;
+  }
+}
+
+
+
+
+

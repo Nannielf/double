@@ -3,6 +3,7 @@
 .rent {
   font-family: DM Sans, sans-serif;
   padding: 40px 0;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -39,9 +40,8 @@
   background: #91afba;
   filter: blur(100px);
 
-  top: 436px;
-  right: -80px;
-  /* left: 200px; */
+  top: 360px;
+  right: -160px;
   z-index: 0;
 }
 @media only screen and (min-width: 768px) {
@@ -52,7 +52,6 @@
     border-radius: 413px;
     top: 100px;
     right: -220px;
-    /* left: 530px; */
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -63,7 +62,6 @@
     border-radius: 414px;
     top: 180px;
     right: -150px;
-    /* left: 1000px; */
   }
 }
 

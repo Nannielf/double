@@ -1,8 +1,6 @@
-/* Руслан Афанасьев */
-
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'horizontal',
+  direction: 'vertical',
   loop: true,
   
 
@@ -21,4 +19,5 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+  
 });

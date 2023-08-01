@@ -1,5 +1,229 @@
-/* Ruslan Trofimov */
+.review-block-title {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
-.reviews{
-    background-color: rgb(240, 206, 232);
+.review-block-h_three {
+  justify-content: left;
+  color: var(--white, #f6f5ef);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.08px;
+}
+
+.review-block-YA-font {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -1.08px;
+  background-color: #bec7c2, #a1b5ba;
+  background-image: linear-gradient(90deg, #bec7c2, #a1b5ba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.review-block-title-p {
+  max-width: 335px;
+  padding-top: 24px;
+  color: var(--white, #f6f5ef);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: -0.28px;
+}
+
+.review-block-images {
+  gap: 32px;
+  background-color: var(--dark-white-color);
+}
+
+.review-block-images-bkg {
+  border-radius: 24px;
+  background: #1f212d;
+}
+
+.review-block-img {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 18px;
+  box-sizing: unset;
+  background: #1f212d;
+}
+
+.review-block-h_four {
+  color: var(--white, #f6f5ef);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: -0.72px;
+  padding-bottom: 8px;
+}
+
+.review-block-p {
+  color: rgba(246, 245, 239, 0.5);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: -0.24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.review-block-link {
+  display: flex;
+  margin-top: 43px;
+  margin-bottom: 20px;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .review-block-title {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 88px;
+  }
+
+  .review-block-h_three {
+    max-width: 497px;
+    font-size: 32px;
+    letter-spacing: -1.44px;
+  }
+
+  .review-block-YA-font {
+    font-size: 32px;
+    letter-spacing: -1.44px;
+  }
+
+  .review-block-title-p {
+    max-width: 273px;
+    padding-top: 32px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    margin-left: auto;
+  }
+
+  .review-block-images {
+    display: flex;
+    gap: 24px;
+    background-color: var(--dark-white-color);
+  }
+
+  .review-block-images-bkg {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .review-block-img {
+    padding-bottom: 24px;
+  }
+
+  .review-block-h_four {
+    font-size: 18px;
+    letter-spacing: -0.81px;
+  }
+
+  .review-block-p {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .review-block-link {
+    margin-top: 45px;
+    margin-bottom: 32px;
+    width: 68px;
+    height: 68px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .review-block-title {
+    padding-top: 82px;
+    padding-bottom: 64px;
+  }
+
+  .review-block-h_three {
+    max-width: 497px;
+    font-size: 32px;
+    letter-spacing: -1.44px;
+  }
+
+  .review-block-YA-font {
+    font-size: 32px;
+    letter-spacing: -1.44px;
+  }
+
+  .review-block-title-p {
+    margin-left: auto;
+    padding-top: 0px;
+    max-width: 273px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+
+  .review-block-images {
+    display: flex;
+    gap: 32px;
+    background-color: var(--dark-white-color);
+  }
+
+  .review-block-images-bkg {
+    width: calc((100% - 64px) / 3);
+  }
+
+  .review-block-img {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  .review-block-h_four {
+    font-size: 18px;
+    letter-spacing: -0.81px;
+  }
+
+  .review-block-p {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .review-block-link {
+    margin-top: 64px;
+    margin-bottom: 32px;
+    width: 68px;
+    height: 68px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-two {
+    display: none;
+  }
+
+  .card-three {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .card-three {
+    display: none;
+  }
 }
