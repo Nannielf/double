@@ -20,7 +20,7 @@ footer {
 }
 
        /* Mobile */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .footer_container {
         width:704px;
         height: 280px;
@@ -29,7 +29,7 @@ footer {
         margin-top: 40px;
     }
     .footer_container::after {
-            display: block;
+                display: block;
                 position: absolute;
                 content: "";
                 width: 323px;
@@ -42,7 +42,6 @@ footer {
                 filter: blur(100px);
                 left: 200px;
                 z-index: 0;
-
     }
     .container_footer {
         width: 335px;
@@ -104,7 +103,6 @@ gap: 14px;
     .tekst_vnizu_stranici_container {
         padding-top: 40px;
         padding-bottom: 14px;
-        /* justify-content: center */
 }
     .spisok_vnizu_stranici {
         display: flex;
@@ -134,7 +132,6 @@ gap: 14px;
         flex-shrink: 0;
         margin-bottom: 64px;
     }
-
     .menu_footer {
         display: flex;
         flex-direction: column;
@@ -183,6 +180,21 @@ gap: 14px;
     .container_vnizu_stranici {
         margin-bottom: 16px;
     }
+        .container_vnizu_stranici::after {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 323px;
+            height: 323px;
+            transform: rotate(-44.916deg);
+            flex-shrink: 0;
+            border-radius: 323px;
+            opacity: 0.6000000238418579;
+            background: #91AFBA;
+            filter: blur(100px);
+            left: 200px;
+            z-index: 0;
+        }
 }
 
 
