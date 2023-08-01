@@ -83,7 +83,7 @@
 .review-block-link {
   display: flex;
   margin-top: 43px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   width: 24px;
   height: 24px;
   margin-left: auto;
@@ -117,8 +117,14 @@
     margin-left: auto;
   }
 
+  .review-block-images {
+    display: flex;
+    gap: 24px;
+    background-color: var(--dark-white-color);
+  }
+
   .review-block-images-bkg {
-    width: calc((100% - 28px) / 2);
+    width: calc((100% - 16px) / 2);
   }
 
   .review-block-img {
@@ -140,7 +146,7 @@
 
   .review-block-link {
     margin-top: 45px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     width: 68px;
     height: 68px;
   }
@@ -200,7 +206,7 @@
 
   .review-block-link {
     margin-top: 64px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     width: 68px;
     height: 68px;
   }
