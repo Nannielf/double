@@ -21,6 +21,10 @@ footer {
 
        /* Mobile */
 @media screen and (max-width:767px) {
+    .position{
+        position: relative;
+        overflow: hidden;
+    }
     .footer_container {
         width:704px;
         height: 280px;
@@ -28,7 +32,7 @@ footer {
     .footer_container {
         margin-top: 40px;
     }
-    .footer_container::after {
+    /* .footer_container::after {
                 display: block;
                 position: absolute;
                 content: "";
@@ -42,7 +46,8 @@ footer {
                 filter: blur(100px);
                 left: 200px;
                 z-index: 0;
-    }
+                overflow: hidden;
+    } */
     .container_footer {
         width: 335px;
         height: 334px;
@@ -56,7 +61,7 @@ footer {
         height: 0px;
         flex-shrink: 0;
         stroke-width: 1px;
-        stroke: rgba(246, 245, 239, 0.20);
+        stroke: rgba(246, 245, 239, 0.10);
     }
     .footer_logo_and_title {
         display: flex;
@@ -105,6 +110,23 @@ gap: 14px;
         stroke: rgba(246, 245, 239, 0.50);
         fill: var(--white);
     }
+.container_vnizu_stranici::after{
+    display: block;
+        position: absolute;
+        content: "";
+        width: 420px;
+        height: 420px;
+        transform: rotate(-44.916deg);
+        flex-shrink: 0;
+        border-radius: 420px;
+        opacity: 0.60;
+        background: #91AFBA;
+        filter: blur(100px);
+        top: 259px;
+        right: 5px;
+        z-index: 0;
+        overflow: hidden;
+}
     .tekst_vnizu_stranici_container {
         padding-top: 40px;
         padding-bottom: 14px;
@@ -126,6 +148,11 @@ gap: 14px;
              
            /* Tablet */
 @media screen and (min-width: 768px) {
+   .position {
+        position: relative;
+        overflow: hidden;
+    }
+
     .footer_container {
         display: flex;
         justify-content: space-between;
@@ -189,16 +216,18 @@ gap: 14px;
             display: block;
             position: absolute;
             content: "";
-            width: 323px;
-            height: 323px;
+            width: 419px;
+            height: 419px;
             transform: rotate(-44.916deg);
             flex-shrink: 0;
-            border-radius: 323px;
-            opacity: 0.6000000238418579;
+            border-radius: 419px;
+            opacity: 0.60;
             background: #91AFBA;
             filter: blur(100px);
-            left: 200px;
+            top: 263;
+            left: 220px;
             z-index: 0;
+            
         }
 }
 
@@ -231,7 +260,11 @@ gap: 14px;
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
-
+@media only screen and (min-width: 1280px) {
+.line_footer{
+    width: 1216px;
+  }
+}
 
 
 
