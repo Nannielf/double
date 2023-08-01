@@ -23,3 +23,5 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 16,
   // SlidesPerGroup: 0,
 });
+
+import '/js/mobile-menu.js';
