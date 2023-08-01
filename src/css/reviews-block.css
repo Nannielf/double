@@ -117,12 +117,12 @@
     margin-left: auto;
   }
 
-  .review-block-img {
-    padding-bottom: 24px;
+  .review-block-images-bkg {
+    width: calc((100% - 28px) / 2);
   }
 
-  .card-three {
-    display: none;
+  .review-block-img {
+    padding-bottom: 24px;
   }
 
   .review-block-h_four {
