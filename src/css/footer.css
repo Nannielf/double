@@ -1,7 +1,7 @@
 :root {
     --dark-blue: #11131F
             --light-green: #93ABAE;
-        --linear-green: #BEC7C2, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
+        --linear-green: #BEC7C2;
         --white: #F6F5EF;
         --blue-2: #1F212D;
 }
@@ -67,7 +67,7 @@ footer {
         fill: white;
     }
 .icon_footer_yacht{
-    fill: var(--white);
+    fill: var(--linear-green);
 }
  .menu_footer{
 display: flex;
