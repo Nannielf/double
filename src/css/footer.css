@@ -1,9 +1,9 @@
 :root {
-    --dark-blue: #11131F
-            --light-green: #93ABAE;
-        --linear-green: #BEC7C2;
-        --white: #F6F5EF;
-        --blue-2: #1F212D;
+    --dark-blue: #11131F;
+    --light-green: #93ABAE;
+    --linear-green: #BEC7C2;
+    --white: #F6F5EF;
+    --blue-2: #1F212D;
 }
 
 ul,
@@ -20,7 +20,7 @@ footer {
 }
 
        /* Mobile */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .footer_container {
         width:704px;
         height: 280px;
@@ -66,20 +66,25 @@ footer {
         gap: 8px;
         fill: white;
     }
+
 .icon_footer_yacht{
     fill: var(--linear-green);
 }
+
  .menu_footer{
 display: flex;
 flex-direction: column;
 gap: 14px;
  }
+
 .social_footer_text{
     margin-bottom: 16px;
+
 }
     .text_main_footer{
         
     }
+
     .tekst_vnizu_stranici {
         color: rgba(246, 245, 239, 0.50);
         text-align: center;
