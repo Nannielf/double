@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
     });
-  }); // end foreach
+  });
 
   document.body.addEventListener(
     'keyup',
