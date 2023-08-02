@@ -340,3 +340,54 @@
 .svg-arrow {
   display: block;
 }
+/* swiper */
+@media only screen and (min-width: 1280px) {
+  .arrow-container {
+    width: 1216px;
+    justify-content: space-between;
+    top: 217px;
+    position: absolute;
+  }
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1 !important;
+}
+
+.asdasd-prev,
+.asdasd-next {
+  fill: white;
+  border-radius: 60px;
+  border: 1px solid var(--white, #f6f5ef);
+  padding: 14px 14px;
+  box-sizing: content-box;
+}
+@media only screen and (min-width: 768px) {
+  .asdasd-prev,
+  .asdasd-next {
+    padding: 14px 16px;
+  }
+}
+.arrow-container {
+  margin: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .arrow-container {
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .arrow-container {
+    justify-content: space-between;
+    align-items: normal;
+    gap: 0;
+    width: 1216px;
+    top: 815px;
+    position: absolute;
+    margin: 0;
+  }
+}
