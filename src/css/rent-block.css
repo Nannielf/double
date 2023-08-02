@@ -3,6 +3,7 @@
 .rent {
   font-family: DM Sans, sans-serif;
   padding: 40px 0;
+  overflow-x: clip;
 }
 
 @media only screen and (min-width: 768px) {
@@ -18,7 +19,6 @@
 
 .rent-container {
   position: relative;
-  overflow-x: clip;
 }
 @media only screen and (min-width: 768px) {
   .rent-container {
