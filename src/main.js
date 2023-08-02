@@ -1,4 +1,5 @@
 import '/js/rent-block.js';
+import '/js/mobile-menu.js';
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -37,4 +38,5 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-import '/js/mobile-menu.js';
+
+
