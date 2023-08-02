@@ -12,8 +12,8 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.asdasd-next',
+    prevEl: '.asdasd-prev',
   },
 
   // And if we need scrollbar
@@ -21,7 +21,20 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
   spaceBetween: 16,
-  // SlidesPerGroup: 0,
+  slidesPerGroup: 1,
+  loop: false,
+  breakpoints: {
+
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+     1280: {
+      slidesPerView: 3,
+    }
+  },
 });
 
 import '/js/mobile-menu.js';
