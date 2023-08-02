@@ -132,6 +132,10 @@
   background-color: rgba(17, 19, 31, 0);
   margin-bottom: 80px;
 }
+.yahtsblock-bt:hover {
+  color: var(--light-green, #93abae);
+  border: 1px solid var(--light-green, #93abae);
+}
 @media only screen and (min-width: 768px) {
   .yahtsblock-bt {
     font-size: 18px;
