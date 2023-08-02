@@ -18,13 +18,31 @@ ol {
 footer {
     background-color: var(--dark-blue);
 }
-
+.position {
+    position: relative;
+    overflow: hidden;
+}
+ /* КРУГИ */
+.container_vnizu_stranici::after {
+     display: block;
+     position: absolute;
+     content: "";
+     width: 420px;
+     height: 420px;
+     transform: rotate(-44.916deg);
+     flex-shrink: 0;
+     border-radius: 420px;
+     opacity: 0.60;
+     background: #91AFBA;
+     filter: blur(100px);
+     top: 259px;
+     left: 5px;
+     z-index: 0;
+      overflow: hidden;
+}
           /* Mobile */
 @media screen and (max-width:767px) {
-    .position{
-        position: relative;
-        overflow: hidden;
-    }
+    
     .footer_container {
         width:704px;
         height: 280px;
@@ -90,24 +108,7 @@ gap: 14px;
         stroke: rgba(246, 245, 239, 0.50);
         fill: var(--white);
     }
-              /* КРУГИ */
-.container_vnizu_stranici::after{
-    display: block;
-        position: absolute;
-        content: "";
-        width: 420px;
-        height: 420px;
-        transform: rotate(-44.916deg);
-        flex-shrink: 0;
-        border-radius: 420px;
-        opacity: 0.60;
-        background: #91AFBA;
-        filter: blur(100px);
-        top: 259px;
-        right: 5px;
-        z-index: 0;
-        overflow: hidden;
-}
+
     .tekst_vnizu_stranici_container {
         padding-top: 40px;
         padding-bottom: 14px;
@@ -185,6 +186,9 @@ gap: 14px;
     .container_vnizu_stranici {
         margin-bottom: 16px;
     }
+ .container_vnizu_stranici::after{
+    left: 220px;
+ }
         .line_footer {
             width: 704px;
             height: 0px;
@@ -241,7 +245,9 @@ gap: 14px;
     background-color: rgba(246, 245, 239, 0.20);
   }
 }
-
+.container_vnizu_stranici::after{
+    right: 225px;
+}
 
 
 
