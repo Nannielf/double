@@ -18,6 +18,7 @@
 
 .rent-container {
   position: relative;
+  overflow-x: clip;
 }
 @media only screen and (min-width: 768px) {
   .rent-container {
