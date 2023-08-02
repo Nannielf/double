@@ -1,12 +1,44 @@
 /* Marta Bahrynivska */
 
-
+/* Mobile */
 .hero-section {
     background-color: var(--dark-blue);
-    padding-bottom: 164px;
+    padding-bottom: 80px;
 }
 
-.container {
+/* Tablet */
+  @media only screen and (min-width: 768px) {
+    .hero-section {
+    padding-bottom: 100px;
+    }
+  }
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .hero-section {
+    padding-bottom: 164px;
+  }
+}
+
+/* Mobile */
+@media only screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
 }
 
 
@@ -79,16 +111,51 @@
 
 .images-title-container{
     display: flex;
-    gap: 236px;
+    flex-direction: column-reverse;
+    /* gap: 40px; */
 }
 
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .images-title-container {
+    display: flex;
+    flex-direction: column-reverse;
+    /* gap: 64px; */
+  }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1280px) {
+  .images-title-container {
+    display: flex;
+    flex-direction: row;
+    gap: 236px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .hero-images {
+    padding-top: 32px;
+  }
+}
+
+
 .hero-clients-images-list{
-    background-image: url(//img/hero-images/desktop-background@2x-min.png);
+    background-image: url(/img/hero-images/desktop-background@2x-min.png);
     background-repeat: no-repeat;
-    margin-top: 64px;
-    max-width: 426px;
+    margin-top: 40px;
+    width: 426px;
     height: 598px;
     background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-clients-images-list {
+    width: 335px;
+    height: 471px;
+  }
 }
 
 
@@ -97,6 +164,8 @@
     position: relative;
     margin-bottom: 11px;
 }
+
+
 
 .first-person {
     position: absolute;
@@ -119,14 +188,38 @@
     z-index: 1;
 }
 
+@media only screen and (max-width: 767px) {
+
+    .first-person,
+    .second-person,
+    .third-person {
+        width: 48px;
+        height: 48px;
+    }
+
+    .second-person {
+        left: 35px;
+    }
+    .third-person{
+        left: 70px;
+    }
+}
+
 .hero-clients-images-list{
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-clients-images-list {
     padding-top: 32px;
     padding-left: 32px;
+  }
 }
 
 .clients-text{
-    position: absolute;
-    top: 220px;
+    position: relative;
+    top: 60px;
     text-transform: uppercase;
     color: #11131F;
     font-size: 14px;
@@ -136,10 +229,24 @@
     letter-spacing: 0.56px;
 }
 
-.yacht-image{
+@media only screen and (max-width: 767px) {
+  .clients-text {
+    top: 45px;
+  }
+}
+
+.hero-yacht{
     position: relative;
     bottom: 40px;
     right: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-yacht {
+    width: 287px;
+    height: 167px;
+    bottom: 5px;
+  }
 }
 
 .hero-image-text{
@@ -148,13 +255,28 @@
     gap: 12px;
     align-items: center;
     position:relative;
-    bottom: 20px;
+    bottom: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-image-text {
+    gap: 14px;
+    top: 15px;
+  }
 }
 
 .man-sunglasses{
         position: relative;
         /* border-left: hidden; */
         left: 265px;
+}
+
+@media only screen and (max-width: 767px) {
+  .man-sunglasses {
+    width: 133px;
+    height: 133px;
+    left: 195px;
+  }
 }
 
 .dollar-text{
@@ -166,6 +288,15 @@
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 767px) {
+  .dollar-text {
+    font-size: 48px;
+    letter-spacing: -2.16px;
+    line-height: 110%;
+        /* 52.8px */
+  }
+}
+
 .book-now-text{
     width: 208px;
     height: 36px;
@@ -174,54 +305,139 @@
     line-height: 110%;
         /* 19.8px */
     letter-spacing: -0.81px;
-
 }
 
+@media only screen and (max-width: 767px) {
+  .book-now-text {
+    font-size: 14px;
+    line-height: 140%;
+        /* 19.6px */
+    letter-spacing: -0.63px;
+    width: 169px;
+  }
+}
 
 
 .hero-title {
     color: var(--white);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    margin-bottom: 14px;
+    padding-top: 40px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .hero-title{
+    padding-top: 64px;
     font-size: 60px;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
-    letter-spacing: -2.7px;
     margin-bottom: 16px;
+  }
+  }
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .hero-title {
     padding-top: 132px;
-    width: 100%;
+  }
 }
 
+
 .hero-accent{
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 60px;
+    background: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: DM Sans;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: -2.7px;
+        background-color: #BEC7C2;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-accent {
     font-style: italic;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -2.7px;
-    background-color: #bec7c2, #a1b5ba;
-    background-image: linear-gradient(90deg, #bec7c2, #a1b5ba);
+    font-size: 60px;
+  }
 }
 
 .hero-text {
     color: var(--white);
     line-height: 140%;
     /* 22.4px */
-    letter-spacing: -0.32px;
-    max-width: 539px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
-.text-button{
-    width: 554px;
+/* Talet,desktop */
+.hero-text{
+    font-size: 16px;
+    margin-bottom: 32px;
+    /* max-width: 539px; */
 }
+
+
+/* 
+.text-button{
+    width: 335px;
+} */
+
+/* .hero-title-container{
+    width: 332px;
+} */
+
+/* .hero-text-container{
+    width: 332px;
+} */
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .text-button {
+    width: 704px;
+    width: 110%;
+  }
+  /* .hero-title-container{
+    width: 698px;
+  } */
+  .hero-text-container{
+    width: 539px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .text-button {
+    width: 554px;
+  }
+  .hero-title-container {
+      width: 554px;
+  }
+
+  .hero-text-container {
+      width: 539px;
+  }
+}
+
+
 
 .button-container{
     display: flex;
     flex-wrap: nowrap;
-    gap: 11px;
+    gap: 8px;
 }
+
+@media only screen and (min-width: 768px) {
+  .button-container {
+    gap: 11px;
+  }
+}
+
 
 .start-button {
     display: block;
