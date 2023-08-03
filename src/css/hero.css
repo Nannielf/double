@@ -1,12 +1,14 @@
 
 .hero-section {
-
+  
 }
 .hero-container {
   padding-top: 40px;
+  clip-path: inset( -100vw -100vw -100vw 0 );
 }
 
 .hero-text-block {
+  position: relative;
   max-width: 332px;
 }
 
@@ -97,6 +99,7 @@ letter-spacing: -0.28px;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
+  
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-image-block {
@@ -296,5 +299,97 @@ letter-spacing: -0.63px;
   }
   .man-sunglasses {
     right: -112px;
+  }
+}
+/* elipses */
+.hero-text-block::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  transform: rotate(-44.916deg);
+  flex-shrink: 0;
+  opacity: 0.8999999761581421;
+  background: #939cac;
+  filter: blur(100px);
+  top: 400px;
+  left: -120px;
+  z-index: 0;
+  border-radius: 279px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-text-block::before {
+    width: 414px;
+    height: 414px;
+    border-radius: 414px;
+    top: 500px;
+    left: -200px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-text-block::before {
+    top: 250px;
+    left: -700px;
+  }
+}
+
+.hero-text-block::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  transform: rotate(-44.916deg);
+  flex-shrink: 0;
+  opacity: 0.6000000238418579;
+  background: #91afba;
+  filter: blur(100px);
+  top: 390px;
+  left: -250px;
+  z-index: -1;
+  border-radius: 279px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-text-block::after {
+    width: 414px;
+    height: 414px;
+    top: 500px;
+    left: -400px;
+    border-radius: 414px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-text-block::after {
+    top: 150px;
+    left: -900px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-image-block::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 317px;
+    height: 317px;
+    flex-shrink: 0;
+    transform: rotate(-45.074deg);
+    opacity: 0.30000001192092896;
+    filter: blur(100px);
+    top: 150px;
+    left: -38px;
+    z-index: 0;
+    border-radius: 317px;
+    background: #a6a9b2;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-image-block::after {
+    width: 316px;
+    height: 316px;
+    top: 170px;
+    left: 222px;
+    border-radius: 316px;
   }
 }
