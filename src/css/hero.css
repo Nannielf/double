@@ -85,6 +85,7 @@ letter-spacing: -0.28px;
 .hero-btn-explore:focus,
 .hero-btn-explore:hover{
     color: var(--light-green);
+    border-color: var(--light-green);
 }
 /* IMAGE BLOCK */
 .hero-image-block {
